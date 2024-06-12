@@ -315,3 +315,18 @@ header.sticky {
     font-size: var(--p-font);
     cursor: pointer;
 }
+
+.trending-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    align-items: center;
+    gap: 1.7rem;
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
