@@ -286,3 +286,29 @@ header.sticky {
     line-height: 32px;
     margin: 18px 0;
 }
+
+.c-search form {
+    display: grid;
+    grid-template-columns: 1fr 0.4fr;
+    gap: 1rem;
+}
+
+.c-search form input:first-child {
+    display: inline-block;
+    width: 100%;
+    font-size: 17px;
+    padding: 15px;
+}
+
+.cta-content h4 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.c-search form input:last-child {
+    width: 100%;
+    max-width: 180px;
+    display: inline-block;
+    padding: 16px 30px;
+    background: var(--main-color);
+}
