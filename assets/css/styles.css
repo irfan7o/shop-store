@@ -374,3 +374,169 @@ header.sticky {
 .blog-img img:hover {
     transform: scale(1.1);
 }
+
+.blog-box h6 {
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--second-color);
+    margin-bottom: 10px;
+}
+
+.blog-box h3 {
+    font-size: 20px;
+    font-weight: 700;
+    transition: all .4s;
+}
+
+.blog-box:hover h3 {
+    color: var(--main-color);
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 2rem;
+}
+
+.footer-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-box h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.footer-box p {
+    color: var(--second-color);
+    font-size: var(--p-font);
+    line-height: 32px;
+    margin-bottom: 40px;
+}
+
+.footer-box .icons a {
+    display: inline-block;
+    font-size: 22px;
+    color: var(--second-color);
+    margin-right: 12px;
+    transition: all .6s;
+}
+
+.footer-box .icons a:hover {
+    transform: scale(1.1) translateY(-4px);
+    color: var(--main-color);
+}
+
+.footer-box a {
+    font-size: 17px;
+    color: var(--second-color);
+    margin-bottom: 0.8rem;
+    transition: all .50s ease;
+}
+
+.footer-box a:hover {
+    transform: translateX(5px);
+    color: var(--text-color);
+}
+
+.copyright {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px 12% 20px;
+}
+
+.end-text p {
+    font-size: var(--p-font);
+    color: var(--second-color);
+}
+
+.end-img img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.top {
+    position: fixed;
+    bottom: 2.5rem;
+    right: 3rem;
+}
+
+.top i {
+    font-size: 20px;
+    color: var(--bg-color);
+    background: var(--main-color);
+    padding: 12px;
+    border-radius: 2rem;
+}
+
+@media(max-width:1750px) {
+    header {
+        padding: 25px 7%;
+    }
+
+    header.sticky {
+        padding: 10px 7%;
+    }
+
+    section {
+        padding: 60px 7% 60px;
+    }
+
+    .crafts {
+        padding: 60px 7% 20px;
+    }
+
+    .copyright {
+        padding: 20px 7% 20px;
+    }
+}
+
+@media(max-width:1400px) {
+    header {
+        padding: 22px 5%;
+    }
+
+    header.sticky {
+        padding: 10px 5%;
+    }
+
+    section {
+        padding: 60px 5% 60px;
+    }
+
+    .crafts {
+        padding: 60px 5% 20px;
+    }
+
+    .copyright {
+        padding: 20px 5% 20px;
+    }
+
+    :root {
+        --h1-font: 4.2rem;
+        --h2-font: 3.2rem;
+        --p-font: 1rem;
+    }
+}
+
+@media(max-width:1240px) {
+    .home {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+        height: auto;
+    }
+
+    .home-text {
+        padding-top: 60px;
+        margin-bottom: 40px;
+    }
+}
